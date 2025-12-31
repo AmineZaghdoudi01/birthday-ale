@@ -21,7 +21,7 @@ openBtn.onclick = () => {
 closeBtn.onclick = () => letter.classList.remove("active");
 
 /* Typing effect */
-const text = `Happy Birthday, beautiful soul 💖, May your life be filled with laughter, love, and dreams that come true. Never forget how special you are, not just today, but every single day. <br><br> Stay kind, stay radiant, and keep smiling ✨`;
+const text = `Happy Birthday, beautiful soul 💖, May your life be filled with laughter, love, and dreams that come true. Never forget how special you are, not just today, but every single day.Stay kind, stay radiant, and keep smiling ✨`;
 
 let i = 0;
 const typed = document.getElementById("typedText");
@@ -79,3 +79,4 @@ function drawHearts() {
   requestAnimationFrame(drawHearts);
 }
 drawHearts();
+
