@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Hearts canvas */
+#hearts {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.container {
+  animation: fadeIn 2s ease;
+  text-align: center;
+}
+
+.card {
+  background: rgba(255,255,255,0.9);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  color: #ff6f91;
+}
+
+.fancy-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.2rem;
+  color: #ff3e6c;
+}
+
+.subtitle {
+  margin: 15px 0 30px;
+  color: #555;
+}
+
+button {
+  background: #ff6f91;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff3e6c;
+  transform: scale(1.05);
+}
+
+.music-btn {
+  margin-top: 15px;
+}
+
+/* Letter */
+.letter-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.letter-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.letter-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 22%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+#surpriseText {
+  margin-top: 15px;
+  font-style: italic;
+  color: #ff3e6c;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(30px);}
+  to {opacity:1; transform: translateY(0);}
+}

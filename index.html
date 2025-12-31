@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Ale 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="hearts"></canvas>
+
+<audio id="bgMusic" loop>
+  <source src="a/music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+  <div class="card">
+    <img src="a/ale.jpg" class="avatar" alt="Ale">
+
+    <h1>Happy Birthday</h1>
+    <h2 class="fancy-name">Ale</h2>
+
+    <p id="timeMessage" class="subtitle"></p>
+
+    <button id="openLetter">Open My Letter 💌</button>
+  </div>
+
+  <button id="musicBtn" class="music-btn">
+    <i class="fa-solid fa-play"></i> Play Music
+  </button>
+</div>
+
+<!-- Letter -->
+<div class="letter-overlay" id="letter">
+  <div class="letter-box">
+    <i class="fa-solid fa-xmark close"></i>
+
+    <h3>My Dear Ale 🌸</h3>
+
+    <p id="typedText"></p>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <img src="a/1.jpg">
+      <img src="a/2.jpg">
+      <img src="a/3.jpg">
+      <img src="a/4.jpg">
+    </div>
+
+    <button id="surpriseBtn">🎁 Surprise</button>
+
+    <p id="surpriseText"></p>
+
+    <span class="signature">— With all my love 💗</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
